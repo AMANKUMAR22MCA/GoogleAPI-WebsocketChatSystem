@@ -23,8 +23,8 @@ Video Walkthrough:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/AMANKUMAR22MCA/Google_Apis.git
-cd Google_Apis
+git clone https://github.com/AMANKUMAR22MCA/GoogleAPI-WebsocketChatSystem.git
+cd GoogleAPI-WebsocketChatSystem
 ```
 
 ### 2️⃣ Create & Activate Virtual Environment
