@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Private Chat Room</title>
+    <style>
+      #chat-log {
+        height: 400px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .message {
+        margin-bottom: 10px;
+      }
+      .message .username {
+        font-weight: bold;
+      }
+      .message.own-message {
+        text-align: right;
+        color: #0066cc;
+      }
+      .message.other-message {
+        text-align: left;
+        color: #cc0066;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Private Chat</h1>
+    <div>Logged in as: <strong>{{ current_user.username }}</strong></div>
+    <div>
+      Chatting with:
+      <strong>
+        {% if current_user.username == "user_a" %} user_b {% else %} user_a {%
+        endif %}
+      </strong>
+    </div>
+
+    <div id="chat-log">
+      {% for message in messages %}
+      <div
+        class="message {% if message.user.username == current_user.username %}own-message{% else %}other-message{% endif %}"
+      >
+        <span class="username">{{ message.user.username }}:</span>
+        <span class="content">{{ message.content }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <input
+      id="chat-message-input"
+      type="text"
+      size="50"
+      placeholder="Type your message here..."
+    /><br />
+    <input id="chat-message-submit" type="button" value="Send" />
+
+    {{ room_name|json_script:"room-name" }} {{
+    current_user.username|json_script:"username" }}
+
+    <script>
+      const roomName = JSON.parse(
+        document.getElementById("room-name").textContent
+      );
+      const username = JSON.parse(
+        document.getElementById("username").textContent
+      );
+
+      // Create WebSocket connection
+      const chatSocket = new WebSocket(
+        "ws://" + window.location.host + "/ws/chat/" + roomName + "/"
+      );
+
+      chatSocket.onmessage = function (e) {
+        const data = JSON.parse(e.data);
+        const messageElement = document.createElement("div");
+
+        // Style differently based on whether the message is from the current user
+        if (data.username === username) {
+          messageElement.className = "message own-message";
+        } else {
+          messageElement.className = "message other-message";
+        }
+
+        const usernameElement = document.createElement("span");
+        usernameElement.className = "username";
+        usernameElement.textContent = data.username + ": ";
+
+        const contentElement = document.createElement("span");
+        contentElement.className = "content";
+        contentElement.textContent = data.message;
+
+        messageElement.appendChild(usernameElement);
+        messageElement.appendChild(contentElement);
+
+        document.querySelector("#chat-log").appendChild(messageElement);
+        document.querySelector("#chat-log").scrollTop =
+          document.querySelector("#chat-log").scrollHeight;
+      };
+
+      chatSocket.onclose = function (e) {
+        console.error("Chat socket closed unexpectedly");
+      };
+
+      document.querySelector("#chat-message-input").focus();
+      document.querySelector("#chat-message-input").onkeyup = function (e) {
+        if (e.keyCode === 13) {
+          // enter, return
+          document.querySelector("#chat-message-submit").click();
+        }
+      };
+
+      document.querySelector("#chat-message-submit").onclick = function (e) {
+        const messageInputDom = document.querySelector("#chat-message-input");
+        const message = messageInputDom.value;
+
+        if (message.trim()) {
+          chatSocket.send(
+            JSON.stringify({
+              message: message,
+              username: username,
+            })
+          );
+
+          messageInputDom.value = "";
+        }
+      };
+    </script>
+  </body>
+</html>

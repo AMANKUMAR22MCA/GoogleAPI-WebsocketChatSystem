@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select User</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      button {
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Select a User</h2>
+      <form method="POST">
+        {% csrf_token %}
+        <button type="submit" name="username" value="user_a">
+          Login as User A
+        </button>
+        <button type="submit" name="username" value="user_b">
+          Login as User B
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
