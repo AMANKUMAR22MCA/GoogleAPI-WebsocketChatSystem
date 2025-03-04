@@ -51,6 +51,10 @@ pip install -r requirements.txt
 4. Create OAuth 2.0 Credentials:
    - Go to **Credentials** → **Create Credentials** → **OAuth Client ID**
    - Select "Web Application" as the application type
+   - Authorised JavaScript origins
+     ```
+     http://localhost:8000
+     ```
    - Add the following authorized redirect URIs:
      ```
      http://localhost:8000/auth/callback/
@@ -76,7 +80,7 @@ python manage.py createsuperuser
 ### 7️⃣ Google Sign-In Setup
 
 1. Go to **Django Admin Panel**: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/).
-2. Add Domain Name and Display Name in Sites.
+2. Add Domain Name and Display Name in Sites [ http://127.0.0.1:8000 ] .
 3. Navigate to **Social Applications** under **Social Accounts**.
 4. Click **Add Social Application** and configure as follows:
    - **Provider**: Google
