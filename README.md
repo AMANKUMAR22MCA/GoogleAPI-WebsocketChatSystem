@@ -59,8 +59,7 @@ pip install -r requirements.txt
    - Save and get your **Client ID** and **Client Secret**
 
 ### 5️⃣ Setup Environment Variables (.env file)
-Create a `.env` file in the project root and configure:
-```sh
+Add the values for the varibales declared in settins.py file ,  api_app/index.html , api_app/ views.py
 SECRET_KEY=your_django_secret_key
 DEBUG=True
 GOOGLE_CLIENT_ID=your_google_client_id
