@@ -60,6 +60,7 @@ pip install -r requirements.txt
 
 ### 5️⃣ Setup Environment Variables (.env file)
 Add the values for the varibales declared in settins.py file ,  api_app/index.html , api_app/ views.py
+```
 SECRET_KEY=your_django_secret_key
 DEBUG=True
 GOOGLE_CLIENT_ID=your_google_client_id
