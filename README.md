@@ -73,7 +73,20 @@ GOOGLE_REDIRECT_URI=http://localhost:8000/auth/callback/
 python manage.py migrate
 python manage.py createsuperuser
 ```
+```
+## Google Sign-In Setup
 
+1. Go to **Django Admin Panel**: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/).
+2. Navigate to **Social Applications** under **Social Accounts**.
+3. Click **Add Social Application** and configure as follows:
+   - **Provider**: Google
+   - **Name**: Google Sign In
+   - **Client ID**: *(Paste from Google Console)*
+   - **Secret Key**: *(Paste from Google Console)*
+   - **Sites**: Select your site (`example.com` or `127.0.0.1`).
+
+
+```
 ### 7️⃣ Start the Development Server
 ```sh
 python manage.py runserver
