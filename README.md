@@ -76,8 +76,9 @@ python manage.py createsuperuser
 ### 7️⃣ Google Sign-In Setup
 
 1. Go to **Django Admin Panel**: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/).
-2. Navigate to **Social Applications** under **Social Accounts**.
-3. Click **Add Social Application** and configure as follows:
+2. Add Domain Nmae and Display Name in Sites.
+3. Navigate to **Social Applications** under **Social Accounts**.
+4. Click **Add Social Application** and configure as follows:
    - **Provider**: Google
    - **Name**: Google Sign In
    - **Client ID**: *(Paste from Google Console)*
