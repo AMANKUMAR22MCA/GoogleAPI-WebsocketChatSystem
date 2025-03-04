@@ -150,8 +150,22 @@ ws://localhost:8000/ws/chat/<room_name>/
 ---
 
 ## 📸 Screenshots
-![image](https://github.com/user-attachments/assets/bf848fd7-18f7-41d2-9ea5-bb37840a46c4)
+![postman1- google  authentication](https://github.com/user-attachments/assets/6ecfca5d-a0bd-445e-bfec-8c637adef61e) <br>
 
+![image](https://github.com/user-attachments/assets/bf848fd7-18f7-41d2-9ea5-bb37840a46c4)  <br>
+
+![postman google drive upload](https://github.com/user-attachments/assets/29dfa8c0-f8fc-41e1-a017-3ffc29f8ccd8)  <br>
+
+
+![json received](https://github.com/user-attachments/assets/790e8b31-95d5-4694-bd17-4823dc7c7810)   <br>
+
+
+![google drive login](https://github.com/user-attachments/assets/2a663d32-7603-411a-9e24-449f420fb17c)   <br>
+
+
+![goggle picker authentication](https://github.com/user-attachments/assets/9ab9a52e-7ad7-4a30-8233-8da021c7a9bf)   <br>
+
+![chat](https://github.com/user-attachments/assets/857c3317-091c-4916-8e81-30e159759912)   <br>
 
 
 
