@@ -150,23 +150,22 @@ ws://localhost:8000/ws/chat/<room_name>/
 ---
 
 ## 📸 Screenshots
-![postman1- google  authentication](https://github.com/user-attachments/assets/6ecfca5d-a0bd-445e-bfec-8c637adef61e) <br>
 
-![image](https://github.com/user-attachments/assets/bf848fd7-18f7-41d2-9ea5-bb37840a46c4)  <br>
+![postman1- google  authentication](https://github.com/user-attachments/assets/7edf2d7b-f299-4051-9f8a-26bf87020a48) <br>
 
-![postman google drive upload](https://github.com/user-attachments/assets/29dfa8c0-f8fc-41e1-a017-3ffc29f8ccd8)  <br>
+![postman google drive upload](https://github.com/user-attachments/assets/7007d6cf-8a4d-4ef6-8d9b-db712bee79fa) <br>
 
+![json received](https://github.com/user-attachments/assets/deb8f2e6-b399-44f2-b809-7c4b06cf4ef9) <br>
 
-![json received](https://github.com/user-attachments/assets/790e8b31-95d5-4694-bd17-4823dc7c7810)   <br>
+![select google picker](https://github.com/user-attachments/assets/d4c0858e-76c2-4054-adbc-3a78c1d161d2) <br>
 
+![google drive login](https://github.com/user-attachments/assets/d299d701-bc2a-4c63-8a6d-3e69be12912c) <br>
 
-![google drive login](https://github.com/user-attachments/assets/2a663d32-7603-411a-9e24-449f420fb17c)   <br>
+![google authenticate](https://github.com/user-attachments/assets/7ec44cf0-20c4-4ab2-9b01-3061f5240c7a) <br>
 
+![down file from drive](https://github.com/user-attachments/assets/d73e870b-c107-4948-9178-5440d281073e) <br>
 
-![goggle picker authentication](https://github.com/user-attachments/assets/9ab9a52e-7ad7-4a30-8233-8da021c7a9bf)   <br>
-
-![chat](https://github.com/user-attachments/assets/857c3317-091c-4916-8e81-30e159759912)   <br>
-
+![chat rrom](https://github.com/user-attachments/assets/35dee01d-cf28-4680-aed2-87a075823841)<br>
 
 
 ## 🤝 Contributing
