@@ -13,8 +13,8 @@ from django.http import JsonResponse, HttpResponseRedirect
 from django.shortcuts import redirect
 
 # Your Google OAuth credentials
-CLIENT_ID = "567950340094-hei9u39bd6t717kr4h6sri4vcbue7lmf.apps.googleusercontent.com"
-CLIENT_SECRET = "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"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 REDIRECT_URI = "http://localhost:8000/auth/callback/"
 
 # 🔹 1️⃣ Redirect user to Google's OAuth login page
