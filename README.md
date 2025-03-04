@@ -150,14 +150,19 @@ ws://localhost:8000/ws/chat/<room_name>/
 ---
 
 ## 📸 Screenshots
+## Google Login 
 
 ![postman1- google  authentication](https://github.com/user-attachments/assets/7edf2d7b-f299-4051-9f8a-26bf87020a48) <br>
+## File Upload in Drive
 
 ![postman google drive upload](https://github.com/user-attachments/assets/7007d6cf-8a4d-4ef6-8d9b-db712bee79fa) <br>
+## Google Login Callback Response
 
 ![json received](https://github.com/user-attachments/assets/deb8f2e6-b399-44f2-b809-7c4b06cf4ef9) <br>
+## Google Picker 
 
 ![select google picker](https://github.com/user-attachments/assets/d4c0858e-76c2-4054-adbc-3a78c1d161d2) <br>
+## Google Drive Call Back Response
 
 ![google drive login](https://github.com/user-attachments/assets/d299d701-bc2a-4c63-8a6d-3e69be12912c) <br>
 
